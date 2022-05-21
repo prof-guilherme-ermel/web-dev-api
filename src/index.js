@@ -6,4 +6,4 @@ app.use(express.urlencoded({ extended: true }));
 
 require('./controllers/auth/register-controller')(app);
 
-app.listen(8080);
+app.listen(process.env.PORT);
