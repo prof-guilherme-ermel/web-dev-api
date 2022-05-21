@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/web-dev-api');
+mongoose.connect(process.env.MONGODB_URI);
 mongoose.Promise = global.Promise;
 
 module.exports = mongoose;
