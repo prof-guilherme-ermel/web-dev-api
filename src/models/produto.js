@@ -14,6 +14,10 @@ const ProdutoSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    quantidadeEmEstoque: {
+        type: Number,
+        default: 0,
+    },
 });
 
 const Produto = mongoose.model('Produto', ProdutoSchema);
