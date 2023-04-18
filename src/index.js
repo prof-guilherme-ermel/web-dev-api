@@ -10,3 +10,5 @@ require('./controllers/usuario.controller')(app);
 require('./controllers/produto.controller')(app);
 
 app.listen(process.env.PORT);
+
+module.exports = app;
